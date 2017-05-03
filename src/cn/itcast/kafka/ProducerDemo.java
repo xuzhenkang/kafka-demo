@@ -19,7 +19,7 @@ public class ProducerDemo {
 
 		// 发送业务消息
 		// 读取文件 读取内存数据库，读socket端口
-		for (int i = 1; i <= 1000; i++) {
+		for (int i = 1; i <= 20; i++) {
 			Thread.sleep(500);
 			producer.send(new KeyedMessage<String, String>("mygirls", "I said 'I love you baby!' for " + i + " times."));
 		}
